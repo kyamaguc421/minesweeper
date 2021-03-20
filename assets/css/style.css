@@ -1,0 +1,35 @@
+header {
+	text-align: center;
+}
+
+#table {
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+#table td {
+	border: solid 1px #ddd;
+	padding: 2px;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+td.default {
+	background-color: #ccc;
+}
+
+td.safe {
+	background-color: #fff;
+}
+
+td.flag {
+	background-color: aquamarine;
+}
+
+td.question {
+	background-color: blueviolet;
+}

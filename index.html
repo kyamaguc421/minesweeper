@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />    
+<link rel="icon" type="image/png" href="icon.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="icon.png" />
+<title>Minesweeper!</title>
+<link rel="stylesheet" href="assets/css/style.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+<meta name="description" content="デジタル部の課題で遊びで作ったゲーム「マインスイーパー」です。" />
+<meta name="author" content="Kaori Yamaguchi" />
+<meta property='og:locale' content="ja_JP" />
+<!--<meta property="fb:app_id" content="Facebook App ID" />-->
+<meta property='og:site_name' content="Minesweeper!" />
+<meta property='og:title' content="Minesweeper!" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@kyamaguc421" />
+<meta name="twitter:creator" content="@kyamaguc421" />
+<meta property="og:description" content="デジタル部の課題で遊びで作ったゲーム「マインスイーパー」です。" />
+<meta property="og:url" content="https://kyamaguc421.github.io/minesweeper/" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/image/title.png" />
+<meta property="og:image:width" content="画像の横幅（数値指定）" /> 
+<meta property="og:image:height" content="画像の高さ（数値指定）" />
+</head>
+
+<body>
+
+<header class="header">
+	<img src="assets/image/title.png" width="256" height="256">
+</header>
+
+<nav class="gnav">
+
+</nav>
+
+<main>
+	<div id="app">
+		<table id="table">
+			<tr v-for="(row, rIdx) in states">
+				<td v-for="(col, cIdx) in row" v-bind:class="classObject">
+					<div @click="onSelect(rIdx, cIdx)"></div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</main>
+
+<footer class="footer">
+<!-- /.footer --></footer>
+
+<script type='text/javascript' src='assets/js/vue.js' defer></script>
+<script type='text/javascript' src='assets/js/script.js' defer></script>
+
+</body>
+</html>
